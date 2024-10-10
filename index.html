@@ -38,30 +38,33 @@
         }
         .container {
             display: flex;
-            flex-direction: column;
             max-width: 1200px;
             margin: 20px auto;
         }
-        .main-content {
+        .contact-section {
+            flex: 1;
             background-color: white;
             padding: 20px;
-            margin-bottom: 20px;
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .contact-section img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .main-content {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
             color: #4CAF50;
             margin-bottom: 15px;
-        }
-        .post {
-            margin-bottom: 20px;
-        }
-        .post h3 {
-            margin-bottom: 10px;
-            font-size: 1.5em;
-            color: #333;
-        }
-        .post p {
-            margin-bottom: 10px;
         }
         .footer {
             background-color: #333;
@@ -73,20 +76,9 @@
         .footer p {
             margin: 0;
         }
-        .contact-section {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-        .contact-section img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
         @media(max-width: 768px) {
             .container {
-                padding: 0 10px;
+                flex-direction: column;
             }
             .contact-section {
                 flex-direction: column;
@@ -117,57 +109,58 @@
     <!-- Main Content Area -->
     <div class="container">
         <!-- Contact Section with Profile Picture -->
-        <section id="contact" class="main-content">
-            <div class="contact-section">
-                <img src="profile.jpg" alt="Seonjun Kim's Profile Picture">
-                <div>
-                    <h2>Contact Information</h2>
-                    <p><strong>Email:</strong> <a href="mailto:sunj0226@yonsei.ac.kr">sunj0226@yonsei.ac.kr</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:sunj0226@naver.com">sunj0226@naver.com</a></p>
-                    <p><strong>Profile:</strong> <a href="https://solved.ac/profile/sunj0226" target="_blank">Baekjoon Profile</a></p>
-                </div>
+        <section id="contact" class="contact-section">
+            <img src="profile.jpg" alt="Seonjun Kim's Profile Picture">
+            <div>
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> <a href="mailto:sunj0226@yonsei.ac.kr">sunj0226@yonsei.ac.kr</a></p>
+                <p><strong>Email:</strong> <a href="mailto:sunj0226@naver.com">sunj0226@naver.com</a></p>
+                <p><strong>Profile:</strong> <a href="https://solved.ac/profile/sunj0226" target="_blank">Baekjoon Profile</a></p>
             </div>
         </section>
 
-        <!-- About Me Section -->
-        <section id="about" class="main-content">
-            <h2>About Me</h2>
-            <p>Hello! I am Seonjun Kim, currently pursuing a Bachelor of Science in Artificial Intelligence at Yonsei University, Seoul, South Korea. My research focuses on improving the accuracy of AI models for interpreting medical images. I am particularly interested in computer vision and unsupervised reinforcement learning. I am expected to graduate in February 2027.</p>
-            <p><strong>GPA:</strong> 3.75 / 4.3</p>
-        </section>
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- About Me Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Hello! I am Seonjun Kim, currently pursuing a Bachelor of Science in Artificial Intelligence at Yonsei University, Seoul, South Korea. My research focuses on improving the accuracy of AI models for interpreting medical images. I am particularly interested in computer vision and unsupervised reinforcement learning. I am expected to graduate in February 2027.</p>
+                <p><strong>GPA:</strong> 3.75 / 4.3</p>
+            </section>
 
-        <!-- Research Interests Section -->
-        <section id="research" class="main-content">
-            <h2>Research Interests</h2>
-            <ul>
-                <li>Computer Vision</li>
-                <li>Deep Learning</li>
-                <li>Reinforcement Learning</li>
-            </ul>
-            <p>My research goal is to improve the accuracy of artificial intelligence in interpreting medical images, especially in the fields of computer vision and unsupervised reinforcement learning.</p>
-        </section>
+            <!-- Research Interests Section -->
+            <section id="research">
+                <h2>Research Interests</h2>
+                <ul>
+                    <li>Computer Vision</li>
+                    <li>Deep Learning</li>
+                    <li>Reinforcement Learning</li>
+                </ul>
+                <p>My research goal is to improve the accuracy of artificial intelligence in interpreting medical images, especially in the fields of computer vision and unsupervised reinforcement learning.</p>
+            </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="main-content">
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Yonsei Artificial Intelligence Football & Basketball Team (AI.DA)</strong> – Right Midfielder (APR 2023 – Present)</li>
-                <li><strong>Academy Assistant</strong> – Assisted with calculus problem solving for high school students (JUL 2024 - AUG 2024)</li>
-                <li><strong>Unity Study (YCC)</strong> – Completed Unity study (MAR 2024 – JUN 2024)</li>
-                <li><strong>Baekjoon Gold Project (YCC)</strong> – Learned algorithms, studied Sieve of Eratosthenes (MAR 2024 – JUN 2024)</li>
-                <li><strong>Saturday Mentoring, RC Program</strong> – Led mentoring for middle school students (SEP 2023 – DEC 2023)</li>
-                <li><strong>Student Council of AI</strong> – Member of Administrative Department, organized events (FEB 2024 – Present)</li>
-            </ul>
-        </section>
+            <!-- Experience Section -->
+            <section id="experience">
+                <h2>Experience</h2>
+                <ul>
+                    <li><strong>Yonsei Artificial Intelligence Football & Basketball Team (AI.DA)</strong> – Right Midfielder (APR 2023 – Present)</li>
+                    <li><strong>Academy Assistant</strong> – Assisted with calculus problem solving for high school students (JUL 2024 - AUG 2024)</li>
+                    <li><strong>Unity Study (YCC)</strong> – Completed Unity study (MAR 2024 – JUN 2024)</li>
+                    <li><strong>Baekjoon Gold Project (YCC)</strong> – Learned algorithms, studied Sieve of Eratosthenes (MAR 2024 – JUN 2024)</li>
+                    <li><strong>Saturday Mentoring, RC Program</strong> – Led mentoring for middle school students (SEP 2023 – DEC 2023)</li>
+                    <li><strong>Student Council of AI</strong> – Member of Administrative Department, organized events (FEB 2024 – Present)</li>
+                </ul>
+            </section>
 
-        <!-- Certificates and Skills -->
-        <section id="skills" class="main-content">
-            <h2>Certificates & Skills</h2>
-            <p><strong>TOEIC:</strong> Scored 600 (JUN 2024)</p>
-            <p><strong>Programming Languages:</strong> Python, C++, Java, C#</p>
-            <p><strong>Tools:</strong> Vim</p>
-            <p><strong>Languages:</strong> Korean (native), English (intermediate)</p>
-        </section>
+            <!-- Certificates and Skills -->
+            <section id="skills">
+                <h2>Certificates & Skills</h2>
+                <p><strong>TOEIC:</strong> Scored 600 (JUN 2024)</p>
+                <p><strong>Programming Languages:</strong> Python, C++, Java, C#</p>
+                <p><strong>Tools:</strong> Vim</p>
+                <p><strong>Languages:</strong> Korean (native), English (intermediate)</p>
+            </section>
+        </div>
     </div>
 
     <!-- Footer Section -->
