@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seonjun Kim - Academic CV</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -11,14 +13,14 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif; /* 폰트 설정 */
             line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #f9f9f9; /* 기본 배경색 */
+            color: #333; /* 기본 글자색 */
         }
         header {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #87CEEB; /* 하늘색 배경 */
+            color: white; /* 헤더 글자색 */
             padding: 15px 0;
             text-align: center;
         }
@@ -26,12 +28,12 @@
             margin-bottom: 10px;
         }
         nav {
-            background-color: #333;
+            background-color: #87CEEB; /* 하늘색 배경 */
             padding: 10px;
             text-align: center;
         }
         nav a {
-            color: white;
+            color: white; /* 내비게이션 글자색 */
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
@@ -43,32 +45,30 @@
         }
         .contact-section {
             flex: 1;
-            background-color: white;
+            background-color: white; /* 연락처 섹션 배경색 */
             padding: 20px;
             margin-right: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-            gap: 20px;
         }
         .contact-section img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
+            margin-bottom: 20px; /* 사진과 텍스트 간격 추가 */
         }
         .main-content {
             flex: 3;
-            background-color: white;
+            background-color: white; /* 메인 콘텐츠 배경색 */
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #4CAF50;
+            color: #87CEEB; /* 하늘색 글자 */
             margin-bottom: 15px;
         }
         .footer {
-            background-color: #333;
-            color: white;
+            background-color: #87CEEB; /* 하늘색 배경 */
+            color: white; /* 바닥글 글자색 */
             text-align: center;
             padding: 20px 0;
             margin-top: 20px;
@@ -81,11 +81,7 @@
                 flex-direction: column;
             }
             .contact-section {
-                flex-direction: column;
                 text-align: center;
-            }
-            .contact-section img {
-                margin-bottom: 20px;
             }
         }
     </style>
@@ -94,7 +90,7 @@
 
     <!-- Header Section -->
     <header>
-        <h1>Seonjun Kim's Academic Website</h1>
+        <h1>Seonjun Kim</h1>
         <p>Student | AI Researcher | Yonsei University</p>
     </header>
 
@@ -102,6 +98,7 @@
     <nav>
         <a href="#about">About Me</a>
         <a href="#research">Research Interests</a>
+        <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -110,13 +107,10 @@
     <div class="container">
         <!-- Contact Section with Profile Picture -->
         <section id="contact" class="contact-section">
-            <img src="profile.jpg" alt="Seonjun Kim's Profile Picture">
-            <div>
-                <h2>Contact Information</h2>
-                <p><strong>Email:</strong> <a href="mailto:sunj0226@yonsei.ac.kr">sunj0226@yonsei.ac.kr</a></p>
-                <p><strong>Email:</strong> <a href="mailto:sunj0226@naver.com">sunj0226@naver.com</a></p>
-                <p><strong>Profile:</strong> <a href="https://solved.ac/profile/sunj0226" target="_blank">Baekjoon Profile</a></p>
-            </div>
+            <img src="Website_Profile_Picture.jpg" alt="Seonjun Kim's Profile Picture">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> <a href="mailto:sunj0226@yonsei.ac.kr">sunj0226@yonsei.ac.kr</a></p>
+            <p><strong>Email:</strong> <a href="mailto:sunj0226@naver.com">sunj0226@naver.com</a></p>
         </section>
 
         <!-- Main Content Area -->
@@ -137,6 +131,16 @@
                     <li>Reinforcement Learning</li>
                 </ul>
                 <p>My research goal is to improve the accuracy of artificial intelligence in interpreting medical images, especially in the fields of computer vision and unsupervised reinforcement learning.</p>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Yonsei University</strong> – BS in Artificial Intelligence</li>
+                    <li><strong>GPA:</strong> – 3.75 / 4.3</li>
+                    <li><strong>Coursework:</strong> – Computer Programming, Object-Oriented Programming, Data Structure</li>
+                </ul>
             </section>
 
             <!-- Experience Section -->
