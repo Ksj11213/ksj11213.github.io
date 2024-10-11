@@ -75,17 +75,28 @@
         }
         h2 {
             color: #4B3D3D; /* 진한 갈색 글자 */
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        section {
+            margin-bottom: 1em; /* 각 섹션 간의 기본 간격 설정 (글씨 크기 1em 만큼) */
         }
         .footer {
             background-color: #333; /* 내비게이션과 같은 배경색 */
             color: white; /* 바닥글 글자색 */
             text-align: center;
             padding: 20px 0;
-            margin-top: 70px;
+            margin-top: 25px;
         }
         .footer p {
             margin: 0;
+        }
+        /* 링크 색상 통일 */
+        a {
+            color: #0000FF;
+            text-decoration: none; /* 링크에 밑줄 제거 */
+        }
+        a:hover {
+            text-decoration: underline; /* 마우스를 올리면 밑줄이 생김 */
         }
         @media(max-width: 768px) {
             .container {
@@ -116,7 +127,8 @@
         <a href="#about">About Me</a>
         <a href="#research">Research Interests</a>
         <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
+        <a href="#experience">Extracurricular Activities</a>
+        <a href="#skills">Skills</a>
     </nav>
 
     <!-- Main Content Area -->
@@ -124,9 +136,12 @@
         <!-- Contact Section with Profile Picture -->
         <section id="contact" class="contact-section">
             <img src="Website_Profile_Picture.jpg" alt="Seonjun Kim's Profile Picture">
-            <h2>Contact Information</h2>
-            <p><strong>Email:</strong> <a href="mailto:sunj0226@yonsei.ac.kr">sunj0226@yonsei.ac.kr</a></p>
-            <p><strong>Email:</strong> <a href="mailto:sunj0226@naver.com">sunj0226@naver.com</a></p>
+            <h2>Profile Information</h2>
+            <p>
+                <a href="mailto:sunj0226@yonsei.ac.kr">Email</a> / 
+                <a href="https://www.overleaf.com/read/rcnyyzrkndym#87313a" target="_blank">CV</a> / 
+                <a href="https://github.com/Ksj11213" target="_blank">GitHub</a>
+            </p>
         </section>
 
         <!-- Main Content Area -->
@@ -135,7 +150,6 @@
             <section id="about">
                 <h2>About Me</h2>
                 <p>Hello! I am Seonjun Kim. I was born in Seoul, South Korea. I am currently pursuing a Bachelor of Science in Artificial Intelligence at Yonsei University.</p>
-                <p><strong>GPA:</strong> 3.75 / 4.3</p>
             </section>
 
             <!-- Research Interests Section -->
@@ -154,14 +168,22 @@
                 <h2>Education</h2>
                 <ul>
                     <li><strong>Yonsei University</strong> – BS in Artificial Intelligence</li>
-                    <li><strong>GPA:</strong> – 3.75 / 4.3</li>
+                    <li><strong>GPA:</strong> – overall: 3.75 / 4.3 | major: 4.12 / 4.3</li>
                     <li><strong>Coursework:</strong> – Computer Programming, Object-Oriented Programming, Data Structure</li>
                 </ul>
             </section>
 
+            <!-- Certificates and Skills -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <p><strong>Programming Languages:</strong> Python, C++, Java, C#</p>
+                <p><strong>Tools:</strong> Vim</p>
+                <p><strong>Languages:</strong> Korean (native), English (intermediate)</p>
+            </section>
+
             <!-- Experience Section -->
             <section id="experience">
-                <h2>Experience</h2>
+                <h2>Extracurricular Activities</h2>
                 <ul>
                     <li><strong>Yonsei Artificial Intelligence Football & Basketball Team (AI.DA)</strong> – Right Midfielder (APR 2023 – Present)</li>
                     <li><strong>Academy Assistant</strong> – Assisted with calculus problem solving for high school students (JUL 2024 - AUG 2024)</li>
@@ -172,21 +194,7 @@
                 </ul>
             </section>
 
-            <!-- Certificates and Skills -->
-            <section id="skills">
-                <h2>Certificates & Skills</h2>
-                <p><strong>TOEIC:</strong> Scored 600 (JUN 2024)</p>
-                <p><strong>Programming Languages:</strong> Python, C++, Java, C#</p>
-                <p><strong>Tools:</strong> Vim</p>
-                <p><strong>Languages:</strong> Korean (native), English (intermediate)</p>
-            </section>
         </div>
     </div>
-
-    <!-- Footer Section -->
-    <div class="footer">
-        <p>&copy; 2024 Seonjun Kim. All rights reserved.</p>
-    </div>
-
 </body>
 </html>
