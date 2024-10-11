@@ -13,22 +13,32 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Roboto', sans-serif; /* 폰트 설정 */
+            font-family: 'Roboto', sans-serif; /* 변경된 폰트 */
             line-height: 1.6;
             background-color: #f9f9f9; /* 기본 배경색 */
-            color: #333; /* 기본 글자색 */
+            color: #4B3D3D; /* 진한 갈색 글자 */
         }
         header {
-            background-color: #87CEEB; /* 하늘색 배경 */
+            background-color: #606060; /* 진한 회색 배경 */
             color: white; /* 헤더 글자색 */
             padding: 15px 0;
-            text-align: center;
+            display: flex; /* Flexbox 사용 */
+            align-items: center;
+            justify-content: center; /* 텍스트 중앙 정렬 */
+            position: relative; /* 이미지 위치를 조정하기 위해 relative로 설정 */
         }
-        header h1 {
-            margin-bottom: 10px;
+        header img {
+            position: absolute; /* 이미지를 왼쪽으로 고정하기 위해 absolute */
+            left: 20px; /* 왼쪽 끝으로부터 20px 떨어짐 */
+            width: 100px; /* 헤더 이미지 크기 설정 */
+            height: auto;
+        }
+        header div {
+            text-align: center; /* 글자를 중앙 정렬 */
+            width: 100%;
         }
         nav {
-            background-color: #87CEEB; /* 하늘색 배경 */
+            background-color: #333; /* 내비게이션 배경색 */
             padding: 10px;
             text-align: center;
         }
@@ -49,11 +59,12 @@
             padding: 20px;
             margin-right: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* 프로필 사진 중앙 정렬 */
         }
         .contact-section img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            border-radius: 50%; /* 원형 이미지 */
+            width: auto; /* 원래 크기로 복원 */
+            height: 120px; /* 원래 크기로 복원 */
             margin-bottom: 20px; /* 사진과 텍스트 간격 추가 */
         }
         .main-content {
@@ -63,15 +74,15 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #87CEEB; /* 하늘색 글자 */
-            margin-bottom: 15px;
+            color: #4B3D3D; /* 진한 갈색 글자 */
+            margin-bottom: 10px;
         }
         .footer {
-            background-color: #87CEEB; /* 하늘색 배경 */
+            background-color: #333; /* 내비게이션과 같은 배경색 */
             color: white; /* 바닥글 글자색 */
             text-align: center;
             padding: 20px 0;
-            margin-top: 20px;
+            margin-top: 70px;
         }
         .footer p {
             margin: 0;
@@ -83,6 +94,9 @@
             .contact-section {
                 text-align: center;
             }
+            header {
+                flex-direction: column; /* 작은 화면에서는 이미지와 텍스트가 수직으로 배치 */
+            }
         }
     </style>
 </head>
@@ -90,8 +104,11 @@
 
     <!-- Header Section -->
     <header>
-        <h1>Seonjun Kim</h1>
-        <p>Student | AI Researcher | Yonsei University</p>
+        <img src="Yonsei_Mark.png" alt="Header Image"> <!-- 헤더에 첨부할 이미지 -->
+        <div>
+            <h1>Seonjun Kim</h1>
+            <p>Student | AI Researcher | Yonsei University</p>
+        </div>
     </header>
 
     <!-- Navigation -->
@@ -100,7 +117,6 @@
         <a href="#research">Research Interests</a>
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
     </nav>
 
     <!-- Main Content Area -->
@@ -118,7 +134,7 @@
             <!-- About Me Section -->
             <section id="about">
                 <h2>About Me</h2>
-                <p>Hello! I am Seonjun Kim, currently pursuing a Bachelor of Science in Artificial Intelligence at Yonsei University, Seoul, South Korea. My research focuses on improving the accuracy of AI models for interpreting medical images. I am particularly interested in computer vision and unsupervised reinforcement learning. I am expected to graduate in February 2027.</p>
+                <p>Hello! I am Seonjun Kim. I was born in Seoul, South Korea. I am currently pursuing a Bachelor of Science in Artificial Intelligence at Yonsei University.</p>
                 <p><strong>GPA:</strong> 3.75 / 4.3</p>
             </section>
 
@@ -130,7 +146,7 @@
                     <li>Deep Learning</li>
                     <li>Reinforcement Learning</li>
                 </ul>
-                <p>My research goal is to improve the accuracy of artificial intelligence in interpreting medical images, especially in the fields of computer vision and unsupervised reinforcement learning.</p>
+                <p>My research goal is to improve the accuracy of artificial intelligence in interpreting medical images, especially in the fields of computer vision and unsupervised reinforcement learning. I am particularly interested in computer vision and unsupervised reinforcement learning.</p>
             </section>
 
             <!-- Education Section -->
